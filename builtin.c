@@ -15,11 +15,11 @@ int (*get_builtin(char *command))(char **args, char **front)
 {
 	builtin_t funcs[] = {
 		{ "exit", shells_exit },
-		{ "env", shells_env },
-		{ "setenv", shells_setenv },
-		{ "unsetenv", shells_unsetenv },
+		{ "env", shellby_env },
+		{ "setenv", shellby_setenv },
+		{ "unsetenv", shellby_unsetenv },
 		{ "cd", shells_cd },
-		{ "alias", shells_alias },
+		{ "alias", shellby_alias },
 		{ "help", shells_help },
 		{ NULL, NULL }
 	};
