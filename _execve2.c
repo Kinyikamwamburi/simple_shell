@@ -66,7 +66,7 @@ int _printf_numbers_recursion(unsigned int number)
 	return (cnt);
 }
 /**
- * _printf_numbers_recursion - Funtion value number.
+ * _print_numbers_recursion - Funtion value number.
  * @number: Value int.
  *
  * Return: cnt.
@@ -91,6 +91,13 @@ int _print_numbers_recursion(int number)
 
 	return (cnt);
 }
+/**
+ * buildPath - build the path
+ * @argum: the command to execute
+ * @fileName: executable file name
+ * @env: environment
+ * Return: is a void
+*/
 
 char *buildPath(char **argum, char *fileName, char **env)
 {
@@ -99,7 +106,7 @@ char *buildPath(char **argum, char *fileName, char **env)
 
 	if (!stat(argum[0], &stat_var))
 	{
-		if ( (argum[0][0] == '/') ||
+		if ((argum[0][0] == '/') ||
 		     (argum[0][0] == '.' && argum[0][1] == '/') ||
 		     (argum[0][0] == '.' && argum[0][1] == '.'))
 			return (argum[0]);
