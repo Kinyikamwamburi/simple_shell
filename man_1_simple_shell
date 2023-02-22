@@ -1,0 +1,75 @@
+.Dd 28/11/2019
+.Dt _simpleShell(3)
+.Os Holberton School
+.Sh NAME
+.Nm _simpleShell
+.Nd Allows the reception and execution of some shell commands.
+.Sh SYNOPSIS
+.Nm Used libraries:
+.Bl -tag -width -indent
+.It #include <stdio.h>
+.It #include <stdlib.h>
+.It #include <string.h>
+.It #include <stdarg.h>
+.It #include <sys/types.h>
+.It #include <sys/stat.h>
+.It #include <fcntl.h>
+.It #include <unistd.h>
+.It #include<sys/wait.h>
+.It #include <signal.h>
+.El -
+.Nm Protoype of function:
+int main(int argc, char *argv[], char *env[])
+.Sh DESCRIPTION
+_simpleShell commands:
+.Bl -tag -width -indent  \" Begins a tagged list
+.It All commands in /bin/ like ls, cat, mv, cp,...
+.It exit
+.It help
+.It cd
+.El -
+.Sh EXAMPLE
+.Bl -tag -width -indent
+.It 1. After generating the executable with
+.Ar gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.It 2. write and execute
+.Ar ./hsh
+.It 3. Then write ls -la (you should see something like that: $ ls -la)
+.It 4. finaly write ls -la (you should see something like that: $ ls -la)
+.Pp -
+.Sh FILES
+.Bl -tag -width
+.Nm simpleShell.h
+FILE that contains all prototypes and libs.
+.br
+.Nm _main.c.
+FILE that contains the core of the program
+.br
+.Nm _prompt.c
+FILE that contains...
+.br
+.Nm _ctrlc.c
+FILE that contains...
+.br
+.Nm  _execve.c
+FILE that contains...
+.br
+.Nm _putchar.c
+FILE that contains...
+.br
+.Nm _strcpy.c
+FILE that contains...
+.br
+.Nm _strcat.c
+FILE that contains...
+.br
+.Nm _strcmp.c
+FILE that contains...
+.br
+.Nm _read_textfile.c
+FILE that contains...
+.El -
+.Sh RETURN
+Always returns 0
+.Sh AUTHOR
+_printf project for Holberton School by Felipe Satizabal, Carlos Daniel Cortez.
