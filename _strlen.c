@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
-  * string_length - finds the length of a string.
+  * _strlen - finds the length of a string.
   * Return: length of c.
   * @pointer: pointer.
   */
-int string_length(char *pointer)
+int _strlen(char *pointer)
 {
 	int c = 0;
 

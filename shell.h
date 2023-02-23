@@ -14,7 +14,8 @@ int _strcmp(char *s1, char *s2);
 char **parse_input_string(char *buffer);
 char *path_search(char *cmd);
 char *_strncat(char *dest, char *src, int n);
-int string_length(char *pointer);
+int _strlen(char *pointer);
 char *_strcat(char *dest, char *src);
 char *_strchr(char *s, char c);
+char *_strcpy(char *dest, char *src);
 #endif
